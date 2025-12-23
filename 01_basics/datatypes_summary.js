@@ -36,3 +36,35 @@ console.log(typeof null);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+
+
+// +++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap(Non Primitive)
+
+let myYoutubename = "wamiasiddotcom"
+
+let anothername = myYoutubename
+anothername = "waniahehe"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "waniahehe@gmail.com",
+    upi: "user@wyl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "waniawhyhehe@gmai.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
