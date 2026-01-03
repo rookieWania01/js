@@ -20,4 +20,6 @@ console.log(undefined < 0);
 
 console.log("2" === 2);
 
+// === this also checks typeof value
+
 

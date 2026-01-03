@@ -36,6 +36,15 @@ console.log("C", myArr);
 
 console.log(myn2);
 
+// array.splice(start, deleteCount, addItems...);
+//  let arr = [1,2,5];
+// arr.splice(2,0,3,4);
+// console.log(arr);
+ 
+// [1,2,3,4,5] output for abv
+
+
+
 
 
 
