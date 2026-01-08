@@ -64,6 +64,10 @@ console.log(userTwo.email);
 
 
 
+// use spread to avoid mutation of objets
+// let obj1= {...obj1}
+
+
 
 
 

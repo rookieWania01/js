@@ -20,6 +20,13 @@ console.log(myArr.length);
 //console.log(myArr.indexOf(9));
 
 const newArr = myArr.join()
+let arr1 = [1,2,3]
+let joinarr = arr1.join("/")
+    console.log(joinarr);
+    
+
+
+
 //console.log(newArr);
 
 // slice,spice

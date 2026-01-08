@@ -51,7 +51,7 @@ let negValue  = - value
 
 // console.log(3 + 4 * 5 % 3);
   
-console.log(+true);
+console.log(+true); // + urinary operator does number conversion and not boolean conversion dont get confused
 console.log(+"");
 
 let num1, num2, num3

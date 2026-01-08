@@ -15,7 +15,7 @@ console.log(all_new_heros);
 // in concat we can only use two arrays while in ..wala we can add as many as we want to so its generally used
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6,7, [4, 5]]]
-const real_another_array = another_array.flat(Infinity)
+const real_another_array = another_array.flat(Infinity) // simplifies nested array
 console.log(real_another_array);
 
 console.log(Array.isArray("wania"))

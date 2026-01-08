@@ -57,7 +57,7 @@ const course = {
     courseintructor: "waniiiii",
 }
 
-// course.courseintructor
+// course.courseinstructor
 
 const {courseintructor: instructor} = course
 console.log(intructor); // destructure
