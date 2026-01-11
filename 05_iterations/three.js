@@ -18,23 +18,34 @@
 
 // Maps
 
+// const greetings = "hello wania"
+// for (const greet of greetings) {
+//     if ( greet === ' ') continue
+//     console.log(greet);
+    
+// }
+
 const map = new Map()
-map.set('IN', "india")
-map.set('jp', "japan")
-map.set('Fr', "france")
+map.set('IN', 'India')
+map.set('JP','Japan')
+map.set('Fr', 'France')
 
 // console.log(map);
 
-// for (const [key, value] of map) {
-//     console.log(key, ':-', value);
+// for (const key  of map) {
+//     console.log(key) 
 // }
 
-// const myobj = {
-//     'game1': 'nfs',
-//     'game2': 'coc',
-// }
+for (const [key, value] of map) {
+    console.log(key + ':-' + value);
+}
 
-// for (const [key, value] of myobj) {
-//     console.log(key,':-', value);
-    
-// }
+const myobj = {
+    'game1': 'nfs',
+   ' game2': 'cod',
+   ' game3': 'coc',
+}
+
+// for (const [key,value] of myobj) {
+//     console.log(key +':-'+ value);
+// } objects isnt iterable

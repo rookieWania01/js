@@ -1,12 +1,11 @@
 const coding = ["js", "ruby", "cpp", "python", "rust"]
 
-// coding.forEach( function (item)  {
-//     console.log(item);
+// coding.forEach( function (item ) {
+//     console.log(val);
 // } )
 
-// coding.forEach( (item) => {
-//     console.log(item);
-    
+// coding.forEach( (val) => {
+//     console.log(val); 
 // })
 
 // function printme(item){
@@ -15,21 +14,25 @@ const coding = ["js", "ruby", "cpp", "python", "rust"]
 
 // coding.forEach(printme)
 
-// coding.forEach( (item, index, arr) {
-//     console.log(item, index,arr);
-// } )
+// coding.forEach( (item, indexx, arr) => {
+//     console.log(item, indexx, arr);    
+// })
 
 const mycoding = [
     {
-        languageName: "javascript",
-        languageFileName: "java",
+        languagename: "javascript",
+        languagefilename: "js",
     },
     {
+        languagename: "java",
+        languagefilename: "java",
     },
     {
+        languagename: "ruby",
+        languagefilename: "rb",
     },
 ]
 
-mycoding.forEach( (item) => {
-    console.log(item.languageName);    
+mycoding.forEach( (key) => {
+    console.log(key.languagename);  
 })

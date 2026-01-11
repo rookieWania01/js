@@ -6,20 +6,24 @@
 // }
 
 // for (const key in myobj) {
-//   console.log(`${key} shortcut is for ${myobj[key]} `);
+//    console.log(`${key} is shortcut for ${myobj[key]}`);
 // }
 
-// const myarr = ["js", "cpp", "c", "py"]
+// const programming = ["js","cpp","c","rb","py"]
 
-// for (const key in myarr) {
-//     console.log(myarr[key]);
+// for (const key in programming) {
+//    console.log(programming[key]);
 // }
+
+
 
 // const map = new Map()
-// map.set('IN', "india")
-// map.set('jp', "japan")
-// map.set('Fr', "france")
+// map.set('IN', 'India')
+// map.set('JP','Japan')
+// map.set('Fr', 'France')
 
-// for (const key in object) {
-//    console.log(key);
+// for (const key in map) {
+//    console.log(key);  
 // }
+
+
