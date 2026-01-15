@@ -25,5 +25,166 @@
             <li class = "list item"> four</li>
         </ul>
     </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
+
+
+// id always gives an element if u wanna use loop/array go with class/queryselectorall
+
+
+
+📌 DOM SELECTORS – QUICK REVISION NOTES
+🌳 1. DOM kya hota hai?
+
+DOM = Document Object Model
+
+HTML ko tree structure me convert karta hai
+
+Har tag = node
+
+JS DOM ke through HTML/CSS ko change karti hai
+
+🆔 2. getElementById()
+document.getElementById("title")
+
+
+❗ ID unique hoti hai
+
+✔️ returns single element
+
+❌ agar ID exist nahi karti → null
+
+document.getElementById("title").innerText
+
+🏷️ 3. getElementsByClassName()
+document.getElementsByClassName("bg-black")
+
+
+✔️ returns HTMLCollection
+
+❌ direct .innerHTML nahi
+
+✔️ index lagana padega
+
+document.getElementsByClassName("bg-black")[0].innerHTML
+
+🧱 4. getElementsByTagName()
+document.getElementsByTagName("li")
+
+
+✔️ HTMLCollection
+
+✔️ indexing required
+
+🎯 5. querySelector()
+document.querySelector("h1")
+document.querySelector("#title")
+document.querySelector(".heading")
+document.querySelector("input[type='password']")
+
+
+✔️ CSS selector jaisa
+
+✔️ returns FIRST match only
+
+❌ array nahi
+
+🎯🎯 6. querySelectorAll()
+document.querySelectorAll("li")
+
+
+✔️ returns NodeList
+
+✔️ .forEach() supported
+
+❌ direct innerHTML nahi
+
+list[0].innerHTML = "hello"
+
+🔁 7. HTMLCollection vs NodeList
+Feature	HTMLCollection	NodeList
+from	getElementsBy	querySelectorAll
+live?	YES	NO
+forEach	❌	✔️
+index	✔️	✔️
+🔄 8. Array banana kyun padta hai?
+
+HTMLCollection / NodeList ≠ Array
+
+Array.from(collection)
+
+const arr = Array.from(document.getElementsByClassName("item"))
+
+🧠 9. innerHTML / innerText / textContent
+el.innerHTML     // HTML + text
+el.innerText     // visible text only
+el.textContent   // all text
+
+
+❗ sirf ELEMENT pe kaam karta hai
+
+❌ array.innerHTML ❌
+✔️ array[i].innerHTML ✔️
+
+🎨 10. Style change ka syntax
+el.style.backgroundColor = "pink"
+el.style.padding = "10px"
+el.style.borderRadius = "15px"
+
+
+❗ kebab-case ❌
+✔️ camelCase ✔️
+
+🔁 11. Looping DOM elements
+forEach (NodeList)
+list.forEach(li => {
+  li.style.color = "red"
+})
+
+for-of
+for (const li of list) {
+  li.innerText = "hi"
+}
+
+⚠️ 12. Common Errors & Reasons
+❌ Cannot read properties of null
+
+➡️ selector galat OR element exist nahi karta
+
+❌ undefined
+
+➡️ collection pe direct property use ki
+
+❌ innerHTML of undefined
+
+➡️ index galat / missing
+
+🧠 13. BODY pe ID / class
+<body id="bg-black">
+
+document.getElementById("bg-black").innerHTML // ✔️
+document.getElementsByClassName("bg-black")[0] // ✔️
+
+🧠 14. ID se array kyun nahi banta?
+getElementById()
+
+
+➡️ single element return karta hai
+➡️ array banane ka matlab hi nahi
+
+🔑 15. GOLDEN RULES 🔥
+
+ID → single → no array
+
+class / tag → multiple → collection
+
+collection ≠ array
+
+innerHTML → element only
+
+querySelector → first match
+
+querySelectorAll → NodeList
+
