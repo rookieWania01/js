@@ -29,7 +29,7 @@ let joinarr = arr1.join("/")
 
 //console.log(newArr);
 
-// slice,spice
+// slice,splice
 
 console.log("A", myArr);
 

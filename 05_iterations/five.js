@@ -33,6 +33,22 @@ const mycoding = [
     },
 ]
 
-mycoding.forEach( (key) => {
-    console.log(key.languagename);   
-})
+// mycoding.forEach( (key) => {
+//     console.log(key.languagename);   
+// })
+
+
+
+//forof(gives of values), forin(gives indexxes/keys),froeach(fro array holds value,indexx,item), filter (useed to give conditions), map(make changes)
+
+//filter and map return values
+
+// mycoding.forEach( function (element) {
+//     console.log(element);
+    
+// } )
+
+// mycoding.forEach( (item) => {
+//     console.log(item);
+    
+// })

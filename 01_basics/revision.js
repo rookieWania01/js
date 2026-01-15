@@ -17,3 +17,4 @@ let d = Number(b)
 console.log(c);
 console.log(d);
 
+
